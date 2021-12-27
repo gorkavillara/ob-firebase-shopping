@@ -25,7 +25,7 @@ const Header = () => {
       >
         <SiFirebase className="text-2xl text-pink-600" />
         <span className="text-xl font-semibold text-pink-600">
-          FireShopping v2
+          FireShopping v3
         </span>
       </div>
       <div className="flex gap-2">
