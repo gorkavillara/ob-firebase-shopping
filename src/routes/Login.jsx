@@ -67,17 +67,19 @@ const Login = () => {
         >
           <input
             className="border border-gray-500 rounded py-1 px-2 outline-none"
+            placeholder="Email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
             className="border border-gray-500 rounded py-1 px-2 outline-none"
+            placeholder="Password"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button className="bg-sky-400 py-1 text-white rounded shadow">
+          <button className="submit-button">
             Log In
           </button>
         </form>

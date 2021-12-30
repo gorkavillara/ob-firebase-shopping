@@ -67,7 +67,7 @@ const TaskList = () => {
           value={task.title}
           disabled={!user}
           placeholder="Título"
-          className="border shadow outline-none focus:ring ring-sky-200 rounded px-2 py-1 w-full"
+          className="title-input border shadow outline-none focus:ring ring-sky-200 rounded px-2 py-1 w-full"
           onChange={(e) => setTask({ ...task, title: e.target.value })}
         />
         <textarea
@@ -76,11 +76,11 @@ const TaskList = () => {
           value={task.description}
           disabled={!user}
           placeholder="Descripción"
-          className="border shadow outline-none focus:ring ring-sky-200 rounded px-2 py-1 w-full"
+          className="description-input border shadow outline-none focus:ring ring-sky-200 rounded px-2 py-1 w-full"
           onChange={(e) => setTask({ ...task, description: e.target.value })}
         />
         <button
-          className="bg-sky-400 text-white rounded shadow py-1 hover:bg-sky-500 transition font-semibold disabled:bg-sky-200"
+          className="submit-button"
           disabled={!user}
           onClick={() =>
             mode === "add" ? createNewTask() : updateExistingTask()
